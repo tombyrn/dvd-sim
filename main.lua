@@ -27,6 +27,7 @@ dvd_height = dvd_logo:getHeight() --height in pixels of the png file
 --LOVE2D LOAD--
 -- called once when the program is run, then whenever the user hits the spacebar
 love.load = function()
+    
     -- get the screen_height and screen_width of the window
     screen_width = love.graphics.getWidth()
     screen_height = love.graphics.getHeight()
@@ -65,7 +66,6 @@ love.load = function()
     dvd_object.fixture:setRestitution(1) --set the object to not lose momentum on collision
     dvd_object.fixture:setFriction(0) --zero out friction so it doesn't slow down on collision
     dvd_object.fixture:setUserData(dvd_logo) --associate variable to fixture so it can be retrieved later
-    
     
 end
 
